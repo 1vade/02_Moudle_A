@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FEFEFE"
+	android:orientation="vertical"
+	tools:context=".FilterActivity">
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:background="@color/white"
+		android:elevation="10dp">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="Filters"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+		<ImageView
+			android:id="@+id/back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:src="@drawable/ic_back" />
+	
+	
+	</FrameLayout>
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="15dp"
+		android:text="Price(for 1 night)"
+		android:textColor="@color/text"
+		android:textSize="18sp" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="38dp"
+			android:text="$100"
+			android:textColor="@color/black" />
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="167dp"
+			android:text="$600"
+			android:textColor="@color/black" />
+	</LinearLayout>
+	
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginHorizontal="20dp"
+			android:orientation="horizontal">
+			
+			<View
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@drawable/item_search"
+				android:backgroundTint="@color/text" />
+			
+			<View
+				android:layout_width="0dp"
+				android:layout_height="4dp"
+				android:layout_weight="5"
+				android:background="@drawable/item_search"
+				android:backgroundTint="@color/main" />
+			
+			<View
+				android:layout_width="0dp"
+				android:layout_height="4dp"
+				android:layout_weight="4"
+				android:background="@drawable/item_search"
+				android:backgroundTint="@color/text" />
+		</LinearLayout>
+		
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_gravity="center_vertical"
+			android:layout_marginStart="42dp"
+			android:background="@drawable/item_filter"
+			android:elevation="5dp"
+			android:src="@drawable/ic_left" />
+		
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_gravity="center_vertical"
+			android:layout_marginVertical="10dp"
+			android:layout_marginStart="242dp"
+			android:background="@drawable/item_filter"
+			android:elevation="5dp"
+			android:src="@drawable/ic_right" />
+	</FrameLayout>
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		
+		android:background="#EFEFEF" />
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="15dp"
+		android:text="Popular filters"
+		android:textColor="@color/text"
+		android:textSize="18sp" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_marginHorizontal="20dp"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Free Breakfast"
+				android:textColor="#676767"
+				 />
+			
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:checked="true"
+				android:text="Pool"
+				android:textColor="#676767"
+				android:theme="@style/CheckBoxTheme"/>
+			
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Free wifi"
+				android:textColor="#676767"
+				/>
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="50dp"
+			android:orientation="vertical">
+			
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Free Parking"
+				android:textColor="#676767"
+				/>
+			
+			<CheckBox
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Pet Friendly"
+				android:textColor="#676767"
+				/>
+		
+		</LinearLayout>
+	</LinearLayout>
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginVertical="10dp"
+		android:background="#EFEFEF" />
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="15dp"
+		android:text="Distance from city center"
+		android:textColor="@color/text"
+		android:textSize="18sp" />
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="Less than 5.0 Km" />
+	
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginHorizontal="20dp"
+			android:orientation="horizontal">
+			
+			<View
+				android:layout_width="0dp"
+				android:layout_height="4dp"
+				android:layout_weight="1"
+				android:background="@drawable/item_search"
+				android:backgroundTint="@color/main" />
+			
+			<View
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:background="@drawable/item_search"
+				android:backgroundTint="@color/text" />
+		
+		</LinearLayout>
+		
+		<ImageView
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_gravity="center_vertical"
+			android:layout_marginVertical="10dp"
+			android:layout_marginStart="195dp"
+			android:background="@drawable/item_filter"
+			android:elevation="5dp" />
+	
+	</FrameLayout>
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginVertical="10dp"
+		android:background="#EFEFEF" />
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="15dp"
+		android:text="Type of Accommodation"
+		android:textColor="@color/text"
+		android:textSize="18sp" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="15dp"
+		android:gravity="center_vertical">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="All" />
+		
+		<FrameLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			
+			<TextView
+				android:layout_width="50dp"
+				android:layout_height="30dp"
+				android:background="@drawable/item_search"
+				android:backgroundTint="#E4E4E4" />
+			
+			<TextView
+				android:layout_width="26dp"
+				android:layout_height="26dp"
+				android:layout_gravity="center_vertical"
+				android:layout_marginStart="3dp"
+				android:background="@drawable/item_search"
+				android:backgroundTint="#FFFFFF"
+				android:elevation="2dp" />
+		</FrameLayout>
+	
+	
+	</LinearLayout>
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginVertical="10dp"
+		android:background="#EFEFEF" />
+	
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginHorizontal="20dp"
+		android:background="@drawable/item_search"
+		android:backgroundTint="@color/main"
+		android:elevation="10dp"
+		android:gravity="center"
+		android:padding="15dp"
+		android:text="Apply"
+		android:textColor="@color/white"
+		android:textSize="18sp" />
+</LinearLayout>

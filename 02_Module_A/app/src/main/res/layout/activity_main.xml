@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#F2F2F2"
+	android:orientation="vertical"
+	tools:context=".MainActivity">
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:background="@color/white">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="Explore"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+		
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|center_vertical"
+			android:layout_marginEnd="20dp"
+			android:src="@drawable/ic_location" />
+		
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|center_vertical"
+			android:layout_marginEnd="50dp"
+			android:backgroundTint="@color/main"
+			android:src="@drawable/ic_heart" />
+	</FrameLayout>
+	
+	<FrameLayout
+		android:id="@+id/xianshi"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:background="@color/white"
+		
+		android:paddingHorizontal="15dp"
+		android:visibility="gone"
+		tools:visibility="gone">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="530 hotels found"
+			android:textColor="@color/black"
+			android:textSize="18sp" />
+		
+		<TextView
+			android:id="@+id/text_filter2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|center_vertical"
+			android:layout_marginEnd="35dp"
+			android:text="Filter"
+			android:textColor="@color/black"
+			android:textSize="18sp" />
+		
+		<ImageView
+			android:id="@+id/filter2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|center_vertical"
+			android:src="@drawable/ic_filter"
+			android:tint="@color/main"
+			tools:ignore="UseAppTint" />
+	</FrameLayout>
+	
+	<androidx.core.widget.NestedScrollView
+		android:id="@+id/scrollView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="80dp">
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_marginVertical="12dp"
+					android:layout_marginStart="20dp"
+					android:layout_marginEnd="10dp"
+					android:layout_weight="1"
+					android:background="@drawable/item_search"
+					android:elevation="5dp"
+					android:gravity="center_vertical"
+					android:paddingStart="20dp"
+					android:text="London..."
+					android:textSize="18sp" />
+				
+				<ImageView
+					android:layout_width="55dp"
+					android:layout_height="55dp"
+					android:layout_gravity="center_vertical"
+					android:layout_marginEnd="20dp"
+					android:background="@drawable/item_search"
+					android:backgroundTint="@color/main"
+					android:elevation="5dp"
+					android:padding="10dp"
+					android:src="@drawable/ic_search" />
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginHorizontal="20dp"
+				android:layout_marginBottom="20dp"
+				android:orientation="horizontal">
+				
+				
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="80dp"
+					android:layout_weight="1"
+					android:orientation="vertical">
+					
+					<TextView
+						android:id="@+id/date"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dp"
+						android:text="Choose Date"
+						android:textColor="@color/text"
+						android:textSize="16sp" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="26, Aug - 31, Aug"
+						android:textColor="@color/black"
+						android:textSize="16sp" />
+				
+				</LinearLayout>
+				
+				<View
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/text" />
+				
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:layout_weight="1"
+					android:orientation="vertical">
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dp"
+						android:text="Number of Rooms"
+						android:textColor="@color/text"
+						android:textSize="16sp" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="1 Room - 2 Adults"
+						android:textColor="@color/black"
+						android:textSize="16sp" />
+				
+				</LinearLayout>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/white"
+				android:orientation="vertical">
+				
+				<FrameLayout
+					android:id="@+id/yincang"
+					android:layout_width="match_parent"
+					android:layout_height="60dp"
+					android:background="@color/white"
+					android:paddingHorizontal="15dp">
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:text="530 hotels found"
+						android:textColor="@color/black"
+						android:textSize="18sp" />
+					
+					<TextView
+						android:id="@+id/text_filter"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="end|center_vertical"
+						android:layout_marginEnd="35dp"
+						android:text="Filter"
+						android:textColor="@color/black"
+						android:textSize="18sp" />
+					
+					<ImageView
+						android:id="@+id/filter"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="end|center_vertical"
+						android:src="@drawable/ic_filter"
+						android:tint="@color/main"
+						tools:ignore="UseAppTint" />
+				</FrameLayout>
+				
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recyclerView"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal" />
+			</LinearLayout>
+		</LinearLayout>
+	
+	
+	</androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<!-- Base application theme. -->
+	<style name="Base.Theme._02_Module_A" parent="Theme.Material3.DayNight.NoActionBar">
+		<!-- Customize your light theme here. -->
+		<!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+		
+<!--		<item name="colorPrimaryDark">#FFFFFF</item>-->
+		<item name="android:windowLightStatusBar" >true</item>
+		<item name="android:windowLightNavigationBar" >true</item>
+	</style>
+	
+	<style name="Theme._02_Module_A" parent="Base.Theme._02_Module_A" />
+	
+	<style name="RatingBar" parent="Theme.AppCompat">
+		<item name="colorControlNormal">#A3A3A3</item>
+		<item name="colorControlActivated">@color/main</item>
+	
+	</style>
+	
+	<style name="CheckBoxTheme">
+		<item name="colorAccent">@color/main</item>
+	
+	</style>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/item_search"
+		android:orientation="vertical">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:orientation="vertical"
+				android:padding="10dp">
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="From"
+					android:textColor="@color/text"
+					android:textSize="18sp" />
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Thu,26 Aug"
+					android:textColor="@color/black"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+			</LinearLayout>
+			
+			<View
+				android:layout_width="1dp"
+				android:layout_height="match_parent"
+				android:background="@color/text" />
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:orientation="vertical"
+				android:padding="10dp">
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="To"
+					android:textColor="@color/text"
+					android:textSize="18sp" />
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Tue,31 Aug"
+					android:textColor="@color/black"
+					android:textSize="18sp"
+					android:textStyle="bold" />
+			</LinearLayout>
+		
+		</LinearLayout>
+		
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/text" />
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:gravity="center_vertical">
+			
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:background="@drawable/item_date_button"
+				android:elevation="2dp"
+				android:padding="5dp"
+				android:src="@drawable/ic_before" />
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:text="August,2021"
+				android:textColor="@color/black"
+				android:textSize="20sp"
+				android:textStyle="bold" />
+			
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:background="@drawable/item_date_button"
+				android:elevation="2dp"
+				android:padding="5dp"
+				android:src="@drawable/ic_after" />
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="200dp">
+		
+		</LinearLayout>
+		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginHorizontal="10dp"
+			android:background="@drawable/item_search"
+			android:backgroundTint="@color/main"
+			android:elevation="10dp"
+			android:gravity="center"
+			android:padding="15dp"
+			android:text="Apply"
+			android:layout_marginVertical="10dp"
+			android:textColor="@color/white"
+			android:textSize="18sp" />
+	</LinearLayout>
+	
+	
+
+</LinearLayout>
